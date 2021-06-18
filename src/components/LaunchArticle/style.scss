@@ -1,0 +1,29 @@
+.article {
+	position: relative;
+	color: var(--main-dark);
+	text-align: center;
+
+	&__image {
+		width: 70%;
+		height: 70%;
+		background-size: cover;
+	}
+
+	&__header {
+		width: 100%;
+		position: relative;
+		font-weight: 700;
+
+		h5 {
+			width: max-content;
+			color: #fff;
+			font-size: 3rem;
+		}
+
+		p {
+			font-size: 1.4rem;
+
+			color: #fff;
+		}
+	}
+}
