@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import MenuLinks from "../MenuLinks/MenuLinks";
 import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
 
 const TopMenu = ({ rockets }) => {
 	return (
@@ -14,7 +15,9 @@ const TopMenu = ({ rockets }) => {
 						<MenuLinks rockets={rockets} />
 					</Nav>
 					<Nav>
-						<Nav.Link href="/launches">Past Launhes</Nav.Link>
+						<Nav.Link as={Link} to="/launches">
+							Past Launhes
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
